@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(aleks-dahlberg-8__QSSXe3Mk-unsplash.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo{
+    font-size: 2em;
+    color: aliceblue;
+    user-select: none;
+}
+
+.navigation a{
+    font-size: 1.1em;
+    color: aliceblue;
+    margin-left: 40px;
+    position: relative;
+    text-decoration: none;
+    font-weight: 500;
+}
+ .navigation a:hover{
+    text-decoration: underline;
+    border-radius: 2px;
+    margin-top: 5px;
+} 
+
+.navigation .btnlogin-popup{
+    margin-left: 40px;
+    background: transparent;
+    border-radius: 6px;
+    border-color: #fff;
+    color: #fff;
+    font-size: 1.1em;
+    width: 130px;
+    height: 50px;
+    cursor: pointer;
+    outline: none;
+    border: 2px solid #fff;
+    transition: .5s;
+}
+
+.navigation .btnlogin-popup:hover{
+    color: rgb(72, 236, 182);
+    background-color: #fff;
+}
+
+.wrapper{
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background:transparent;
+    border: 2px solid rgba(255,255,255,.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper .form-box{
+    width: 100%;
+    padding: 40px;
+}
+
+.form-box h2{
+    font-size: 2em;
+    text-align: center;
+    color:#162938;
+}
+
+
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #162938;
+    margin: 30px 0;
+}
+
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #162938;
+    font-weight: 500;
+    pointer-events: none;
+    transform: .5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top:-5px;
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    font-weight: 600;
+    color: #162938;
+    padding: 0 35px 0 5px;
+}
+
+.input-box .icon{
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    top: 15px;
+    color: #162938;
+}
+
+.reminder-forget{
+    font-size: .9em;
+    color: #162938;
+    font-weight: 500;
+    margin: -15px 0 15px 0;
+    justify-content: space-between;
+    display: flex;
+}
+
+.reminder-forget label input{
+    accent-color: #162938;
+    margin-right: 2px;
+}
+
+.reminder-forget a{
+    color: #162938;
+    text-decoration: none;
+}
+
+.reminder-forget a:hover{
+    text-decoration: underline;
+}
+
+.btn{
+    background-color:  #162938;
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 500;
+}
+
+.login-register{
+    font-size: .9em;
+    text-align: center;
+    margin: 25px 0 10px;
+    color: #fff;
+    font-weight: 500;
+  
+}
+
+.login-register p a{
+    color: #4985b4;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-register p a:hover{
+    text-decoration: underline;
+}
